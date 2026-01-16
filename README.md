@@ -28,7 +28,7 @@ This repository contains my implementation and experimental analysis for **CMSC 
 ## Repository Structure
 
 ```
-TSP_OPTIMIZATION/
+tsp_optimization/
 ├── data/                   # Input adjacency matrices
 ├── src/                    # Algorithm implementations
 │   ├── aima_nn_algs.py
@@ -39,7 +39,6 @@ TSP_OPTIMIZATION/
 ├── vendor/aima/            # Vendored AIMA search utilities
 ├── results/
 │   ├── figures/            # Saved plots (PNG)
-│   └── data/               # Aggregated experiment outputs
 ├── report/
 │   └── REPORT.pdf          # Final written report
 ├── Makefile                # Convenience commands
@@ -122,9 +121,9 @@ PYTHONPATH=vendor/aima:. python -m src.aima_my_tsp data/10_random_adj_mat_0.txt
 
 ---
 
-## ⚠️ Important Note on A*
+## Important Note on A*
 
-A* reliably finds **optimal solutions** but becomes computationally infeasible beyond **~15-20 cities**.
+A* reliably finds **optimal solutions** but becomes computationally infeasible beyond **~15 cities** (20+ becomes very slow).
 
 - Node expansion grows rapidly with problem size
 - Use smaller matrices when running A*
@@ -174,7 +173,7 @@ The report addresses:
 ## Author
 
 **Akhil Karumuri**  
-University of Maryland — CMSC 421
+University of Maryland
 
 ---
 
